@@ -1,6 +1,6 @@
 {
-  "name": "leaflet-side-by-side",
-  "version": "2.0.0",
+  "name": "leaflet-shade",
+  "version": "2.0.1",
   "description": "Compare two Leaflet layers side by side",
   "main": "index.js",
   "browserify": {
@@ -14,11 +14,11 @@
     "leaflet": "global:L"
   },
   "scripts": {
-    "build": "browserify index.js > leaflet-side-by-side.js",
-    "postbuild": "uglifyjs leaflet-side-by-side.js -cm -o leaflet-side-by-side.min.js",
+    "build": "browserify index.js > leaflet-shade.js",
+    "postbuild": "uglifyjs leaflet-shade.js -cm -o leaflet-shade.min.js",
     "preversion": "npm test && npm run build",
     "lint": "standard index.js",
-    "start": "budo index.js:leaflet-side-by-side.js --live",
+    "start": "budo index.js:leaflet-shade.js --live",
     "test": "npm run lint"
   },
   "keywords": [
@@ -36,14 +36,14 @@
     "browserify-shim": "^3.8.11",
     "css-img-datauri-stream": "^0.1.5",
     "cssify": "^0.8.0",
-    "leaflet": ">=0.7.7 <2.0.0"
+    "leaflet": "^1.3.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digidem/leaflet-side-by-side.git"
+    "url": "git+https://github.com/ivan-hilckov/leaflet-shade.git"
   },
   "bugs": {
-    "url": "https://github.com/digidem/leaflet-side-by-side/issues"
+    "url": "https://github.com/ivan-hilckov/leaflet-shade/issues"
   },
-  "homepage": "https://github.com/digidem/leaflet-side-by-side#readme"
+  "homepage": "https://github.com/ivan-hilckov/leaflet-shade#readme"
 }
