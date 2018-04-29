@@ -46,10 +46,10 @@ function asArray (arg) {
 }
 
 function noop () {
-  return
+
 }
 
-L.Control.SideBySide = L.Control.extend({
+L.Control.Shade = L.Control.extend({
   options: {
     thumbSize: 42,
     padding: 0
@@ -95,10 +95,10 @@ L.Control.SideBySide = L.Control.extend({
       return this
     }
     if (this._leftLayer) {
-      this._leftLayer.getContainer().style.clip = ""
+      this._leftLayer.getContainer().style.clip = ''
     }
     if (this._rightLayer) {
-      this._rightLayer.getContainer().style.clip = ""
+      this._rightLayer.getContainer().style.clip = ''
     }
     this._removeEvents()
     L.DomUtil.remove(this._container)
@@ -193,8 +193,8 @@ L.Control.SideBySide = L.Control.extend({
   }
 })
 
-L.control.sideBySide = function (leftLayers, rightLayers, options) {
-  return new L.Control.SideBySide(leftLayers, rightLayers, options)
+L.control.shade = function (leftLayers, rightLayers, options) {
+  return new L.Control.Shade(leftLayers, rightLayers, options)
 }
 
-module.exports = L.Control.SideBySide
+module.exports = L.Control.Shade
