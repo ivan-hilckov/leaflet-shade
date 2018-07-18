@@ -74,3 +74,7 @@ L.control.sideBySide(myLayer1, myLayer2).addTo(map);
 ### License
 
 MIT
+
+### TODO
+
+https://github.com/mapbox/mapbox-gl-compare/blob/master/index.js
